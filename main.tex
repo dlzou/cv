@@ -146,6 +146,9 @@
     \resumeSubheading
       {University of California, Berkeley}{Berkeley, CA}
       {B.Sc. Electrical Engineering and Computer Sciences, with Honors; \textbf{GPA: 3.94/4.00}}{Aug 2019 -- May 2023}
+        \resumeItemListStart
+          \resumeItem{Selected coursework: OS, databases, algorithms, compilers, security, ML, DL}
+        \resumeItemListEnd
     
     \resumeSubheading
       {Academy of Science and Technology}{The Woodlands, TX}
@@ -165,9 +168,9 @@
       {Berkeley Sky Computing Lab}{Berkeley, CA}
       {Undergraduate Research Assistant}{Sep 2022 -- Present}
         \resumeItemListStart
-            \resumeItem{Contributed to \href{https://github.com/alpa-projects/alpa}{Alpa}, a system for automatically parallelizing the training and serving of large-scale neural networks.}
-            \resumeItem{Implemented swapping between GPU and main memories in the Alpa runtime to enable deployment of large models on clusters with limited GPU memory resources.}
-            \resumeItem{Supervised by Lianmin Zheng and Professor Joesph Gonzalez.}
+            \resumeItem{Contributing to \href{https://github.com/alpa-projects/alpa}{Alpa}, a system for automatically parallelizing the training and serving of large-scale neural networks.}
+            \resumeItem{Implementing scheduled swapping between GPU and main memories in the Alpa runtime to enable deployment of large models on clusters with limited GPU resources.}
+            \resumeItem{Supervised by Lianmin Zheng and Professor Joesph E. Gonzalez.}
         \resumeItemListEnd
     
     \resumeSubheading
@@ -175,7 +178,7 @@
       {Undergraduate Research Assistant}{Mar 2021 -- Present}
         \resumeItemListStart
             \resumeItem{Contributed to \href{https://github.com/nums-project/nums}{NumS}, a high performance distributed numerical library for Python with a NumPy-like interface, with support for Ray and Dask backends.}
-            \resumeItem{Studied and innovated on techniques like operator fusion and cost estimation to dynamically schedule sparse-aware tensor operations on multi-node systems.}
+            \resumeItem{Studied and innovated on techniques like operator fusion and cost estimation to dynamically schedule sparse-aware tensor operations on multi-node systems. Publication is in preparation.}
             \resumeItem{Implemented distributed algorithms such as quickselect for block-partitioned arrays, then analyzed the scaling properties of said algorithms through benchmarks on an EC2 cluster.}
             \resumeItem{Supervised by Melih Elibol, PhD and Professor Ion Stoica.}
         \resumeItemListEnd
@@ -217,9 +220,11 @@
             \resumeItem{Administered a GPU cluster, a web hosting server, and other free computing services used by 400+ members.}
             \resumeItem{Maintained a full stack web application written in Django.}
             \resumeItem{Configured a multi-instance Postfix mail server.}
-            \resumeItem{Served as the leader of CSUA Root Staff for a semester upon election to VP of Technology. Acted as liaison with campus IT staff to resolve issues regarding networking services.}
+            \resumeItem{Served as the leader of CSUA Root Staff for the Fall 2021 semester upon election to VP of Technology. Acted as liaison with campus IT staff to resolve issues regarding networking services.}
         \resumeItemListEnd
     
+    \filbreak
+
     \resumeSubheading
       {Computer Science Mentors}{Berkeley, CA}
       {Junior Mentor}{Jan 2021 -- May 2021}
@@ -243,6 +248,10 @@
 
 %----------- PUBLICATIONS ------------
 
+% \section{References}
+%   \resumeSubHeadingListStart
+%   \resumeSubHeadingListEnd
+
 
 
 %----------- PROJECTS -----------
@@ -255,7 +264,7 @@
         {\textbf{PintOS}}{}
           \resumeItemListStart
             \resumeItem{An instructional OS written in C and x86. Completed in CS 162: Operation Systems and Systems Programming over the course of a semester.}
-            \resumeItem{Implemented basic user processes, kernel threads, concurrency primitives, and concurrent filesystem.}
+            \resumeItem{Implemented basic user processes, kernel threads, concurrency primitives, and a concurrent filesystem with a buffer cache.}
           \resumeItemListEnd
       
       \resumeProjectHeading
@@ -270,7 +279,7 @@
         \resumeItemListStart
           \resumeItem{Completed in CS 61C: Great Ideas in Computer Architecture.}
           \resumeItem{Lightweight numerical library for Python, with underlying data structures written in C for performance.}
-          \resumeItem{Support efficient matrix slicing and common operations like add, abs, matmul, matpow. Optimized matmul with threading, loop tiling, and SIMD intrinsics. Optimized matpow with dynamic programming.}
+          \resumeItem{Supported efficient matrix slicing and common operations like add, abs, matmul, matpow. Optimized matmul with threading, loop tiling, and SIMD intrinsics. Optimized matpow with dynamic programming.}
         \resumeItemListEnd
       
       \resumeProjectHeading
@@ -286,13 +295,14 @@
 
 %----------- AWARDS & ACHIEVEMENTS -----------
 
-\section{Awards \& Achievements}
+\section{Awards}
   \vspace{2pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{National Merit Finalist: }{Selected among high school seniors scoring in the top 0.5\% of the PSAT.} \\ \vspace{3pt}
-        
-        \textbf{American Invitational Mathematics Exam Qualifier: }{Scored in the top 5\% of students taking AMC 10 \& 12.}
+        \textbf{National Merit Finalist (2019): }{selected among high school seniors scoring in the top 0.5\% of the PSAT.} \\ \vspace{3pt}
+    }}
+    \small{\item{
+        \textbf{National AP Scholar (2019): }{received the maximum score of 5 on thirteen Advanced Placement exams.} \\ \vspace{3pt}
     }}
   \resumeSubHeadingListEnd
 
@@ -318,49 +328,41 @@
 
 %----------- SELECTED COURSEWORK -----------
 
-\section{Selected Coursework}
-  \vspace{2pt}
-  \resumeSubHeadingListStart
-    \small{\item{
-        \textbf{CS 61C: }{Gread Ideas in Computer Architecture} \\ \vspace{3pt}
+% \section{Selected Coursework}
+%   \vspace{2pt}
+%   \resumeSubHeadingListStart
+%     \small{\item{
+%         \textbf{CS 161: }{Computer Security} \\ \vspace{3pt}
 
-        \textbf{CS 161: }{Computer Security} \\ \vspace{3pt}
-
-        \textbf{CS 162: }{Operating Systems and Systems Programming} \\ \vspace{3pt}
+%         \textbf{CS 162: }{Operating Systems and Systems Programming} \\ \vspace{3pt}
         
-        \textbf{CS 164: }{Programming Languages and Compilers} \\ \vspace{3pt}
+%         \textbf{CS 164: }{Programming Languages and Compilers} \\ \vspace{3pt}
         
-        \textbf{CS 170: }{Efficient Algorithms and Intractable Problems} \\ \vspace{3pt}
+%         \textbf{CS 170: }{Efficient Algorithms and Intractable Problems} \\ \vspace{3pt}
         
-        \textbf{CS 182: }{Deep Neural Networks} \\ \vspace{3pt}
+%         \textbf{CS 182: }{Deep Neural Networks} \\ \vspace{3pt}
         
-        \textbf{CS 186: }{Introduction to Database Systems} \\ \vspace{3pt}
+%         \textbf{CS 186: }{Introduction to Database Systems} \\ \vspace{3pt}
         
-        \textbf{CS 189: }{Introduction to Maching Learning} \\ \vspace{3pt}
-        
-        \textbf{ENGIN 185: }{The Art of STEM Communication} \\ \vspace{3pt}
-        
-        Please refer to my transcript for a full record of my technical and non-technical coursework.
-    }}
-  \resumeSubHeadingListEnd
+%         Please refer to my transcript for a full record of my technical and non-technical coursework.
+%     }}
+%   \resumeSubHeadingListEnd
 
 
 
 %----------- HOBBIES -----------
 
 % \section{Hobbies}
-  % \resumeSubHeadingListStart
-    % \small{\item{Swimming, Fitness, Eight-ball}}
-  % \resumeSubHeadingListEnd
+%   \resumeSubHeadingListStart
+%   \resumeSubHeadingListEnd
 
 
 
 %----------- REFERENCES -----------
 
 % \section{References}
-  % \resumeSubHeadingListStart
-    
-  % \resumeSubHeadingListEnd
+%   \resumeSubHeadingListStart
+%   \resumeSubHeadingListEnd
 
 
 
