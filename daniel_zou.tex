@@ -126,7 +126,7 @@
     \small
     \faMobile \hspace{.5pt} \href{tel:17039390901}{(703) 939-0901}
     $|$
-    \faEnvelope \hspace{.5pt} \href{mailto:dlzou@berkeley.edu}{dlzou@berkeley.edu}
+    \faEnvelope \hspace{.5pt} \href{mailto:dzou@nvidia.com}{dzou@nvidia.com}
     $|$
     \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/dlzou}{dlzou}
     $|$
@@ -145,43 +145,21 @@
     
     \resumeSubheading
       {University of California, Berkeley}{Berkeley, CA}
-      {B.Sc. Electrical Engineering and Computer Sciences, with Honors; \textbf{GPA: 3.94/4.00}}{Aug 2019 -- May 2023}
+      {B.Sc. Electrical Engineering and Computer Sciences, with High Honors; 3.95/4.00 GPA}{Aug 2019 -- May 2023}
         \resumeItemListStart
-          \resumeItem{Selected coursework: OS, databases, algorithms, compilers, security, ML, DL}
+          \resumeItem{Selected coursework: Algorithms, Compilers, Parallel Computing, Computer Architecture, Operating Systems, Databases, Machine Learning, Deep Learning, Signal Processing}
         \resumeItemListEnd
-    
+
     \resumeSubheading
-      {Academy of Science and Technology}{The Woodlands, TX}
-      {High School Diploma; \textbf{Rank: 2/712}}{Aug 2015 -- May 2019}
-    
-  \resumeSubHeadingListEnd
-
-
-
-%----------- RESEARCH EXPERIENCE -----------
-
-\section{Research Experience}
-  \vspace{3pt}
-  \resumeSubHeadingListStart
-  
-    \resumeSubheading
-      {Berkeley Sky Computing Lab}{Berkeley, CA}
-      {Undergraduate Research Assistant}{Sep 2022 -- Present}
+      {Stanford Center for Professional Development}{Stanford, CA}
+      {Sponsored Enrollment in Graduate Level Coursework}{Jan 2024 -- Present}
         \resumeItemListStart
-            \resumeItem{Contributing to \href{https://github.com/alpa-projects/alpa}{Alpa}, a system for automatically parallelizing the training and serving of large-scale neural networks.}
-            \resumeItem{Implementing scheduled swapping between GPU and main memories in the Alpa runtime to enable deployment of large models on clusters with limited GPU resources.}
-            \resumeItem{Supervised by Lianmin Zheng and Professor Joseph E. Gonzalez.}
+          \resumeItem{Coursework: Program Analysis, Deep Learning for NLP, Robot Autonomy I \& II}
         \resumeItemListEnd
-    
-    \resumeSubheading
-      {Berkeley RISE Lab}{Berkeley, CA}
-      {Undergraduate Research Assistant}{Mar 2021 -- Present}
-        \resumeItemListStart
-            \resumeItem{Contributed to \href{https://github.com/nums-project/nums}{NumS}, a high performance distributed numerical library for Python with a NumPy-like interface, with support for Ray and Dask backends.}
-            \resumeItem{Studied and innovated on techniques like operator fusion and cost estimation to dynamically schedule sparse-aware tensor operations on multi-node systems. Publication is in preparation.}
-            \resumeItem{Implemented distributed algorithms such as quickselect for block-partitioned arrays, then analyzed the scaling properties of said algorithms through benchmarks on an EC2 cluster.}
-            \resumeItem{Supervised by Melih Elibol, PhD and Professor Ion Stoica.}
-        \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Academy of Science and Technology}{The Woodlands, TX}
+    %   {High School Diploma; \textbf{Rank: 2/712}}{Aug 2015 -- May 2019}
     
   \resumeSubHeadingListEnd
 
@@ -192,30 +170,127 @@
 \section{Work Experience}
   \vspace{3pt}
   \resumeSubHeadingListStart
-    
+
+    \resumeSubheading
+      {NVIDIA Corporation}{Santa Clara, CA}
+      {Systems Software Engineer, AI Infrastructure}{Jun 2023 -- Present}
+        \resumeItemListStart
+            \resumeItem{Worked on pipelines that generate ground truth labels for multi-modal sensor signals for AV model training.}
+            \resumeItem{Led initiative to quantify GPU cost and inefficiencies in compute-intensive pipelines; built analytics infrastructure and introduced the Nsight Systems profiler tool.}
+            \resumeItem{Through profiler-guided optimization, mitigated memory and IO bottlenecks in critical egomotion pipeline to reduce consumed GPU hours by about 20\%, or 2,500 DGX node hours per month.}
+            \resumeItem{Developed QA pipeline for lidar-camera calibration that intelligently selects highly representative data samples to reduce human review time.}
+            \resumeItem{Worked on backend services for managing the curation and assembly of datasets with millions of assets.}
+            \resumeItem{Responsible for redesigning several service components to migrate to a new data lake backend.}
+        \resumeItemListEnd
+
     \resumeSubheading
       {NVIDIA Corporation}{Santa Clara, CA}
       {Autonomous Vehicles Software Infrastructure Intern}{May 2022 -- Aug 2022}
         \resumeItemListStart
-            \resumeItem{Designed and built on-call automation and metrics collection tooling from the ground up, for use by MagLev, NVIDIA's autonomous vehicle infrastructure organization.}
-            \resumeItem{Architected a concurrent, event-driven service with WebSockets, producer-consumer queue, in-memory cache, SQL database, and a querying command interface.}
-            \resumeItem{Worked with multiple stakeholder representatives to revise features and improve usability of the tooling during development and beta testing. Presented the product to 50+ engineers and managers, then engaged with discussions of expanding product scope to other organizations.}
-            \resumeItem{Deployed for use by 300+ engineers and business partners, and growing.}
+            \resumeItem{Designed a application for automated management and metrics collection in on-call channels, which are used by all autonomous vehicle infrastructure teams.}
+            \resumeItem{Implemented a full stack event-driven service in Go that concurrently tracks status and statistics for hundreds of live support threads. Statistics were persisted in a relational database and were queryable through a chat interface.}
+            \resumeItem{Worked with multiple stakeholders to revise features and improve usability of the application during development and beta testing. Deployed for use by over 2,000 engineers and business partners.}
         \resumeItemListEnd
     
   \resumeSubHeadingListEnd
 
 
 
-%----------- ORGANIZATIONS -----------
+%----------- RESEARCH EXPERIENCE -----------
 
-\section{Organizations}
+\section{Research Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {Berkeley Sky Computing Lab}{Berkeley, CA}
+      {Undergraduate Research Assistant}{Sep 2022 -- Dec 2022}
+        \resumeItemListStart
+            \resumeItem{Contributed to \href{https://github.com/alpa-projects/alpa}{\color{blue}Alpa}, a framework based on JAX and Ray that automatically parallelizes the training and serving of neural networks with hundreds of billions of parameters.}
+            \resumeItem{Integrated OPT-IML models into the Alpa framework and did performance benchmarking.}
+            \resumeItem{Developed a proof-of-concept runtime that follows an optimal policy to swap tensors between GPU and main memories, enabling deployment on hardware with less GPU resources.}
+            \resumeItem{Advised by Lianmin Zheng and Professor Joseph E. Gonzalez.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Berkeley RISE Lab}{Berkeley, CA}
+      {Undergraduate Research Assistant}{Mar 2021 -- Aug 2022}
+        \resumeItemListStart
+            \resumeItem{Contributed to \href{https://github.com/nums-project/nums}{\color{blue}NumS}, a high performance distributed numerical library for Python with a NumPy-like interface, a Ray backend, and a novel simulation-based scheduler.}
+            \resumeItem{Introduced support for sparse tensors, then studied how to use operator fusion and cost estimation to dynamically schedule sparse operations on clusters in a memory-efficient manner.}
+            \resumeItem{Implemented the distributed quickselect algorithm for block-partitioned arrays, then verified strong and weak scaling through benchmarks of up to $2^{33}$ double precision floats on an AWS EC2 cluster with up to 256 worker processes.}
+            \resumeItem{Advised by Melih Elibol and Professor Ion Stoica.}
+        \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+
+
+%----------- PROJECTS -----------
+
+\section{Selected Projects}
+    \vspace{3pt}
+    \resumeSubHeadingListStart
+      
+      \resumeProjectHeading
+        {\textbf{Computron: Serving Distributed Deep Learning Models with Model Parallel Swapping}  (\href{https://arxiv.org/abs/2306.13835}{\color{blue}ArXiv})}{}
+          \resumeItemListStart
+            \resumeItem{Built a deep learning inference system that serves multiple distributed models on a shared GPU cluster.}
+            \resumeItem{Designed a distributed model swapping mechanism that takes advantage of the aggregate PCIe bandwidth of a multi-GPU cluster to reduce latency, making it feasible to oversubscribe GPU memory with large models.}
+            \resumeItem{Evaluated the system by serving large transformer-based models such as OPT and ViT on a single node cluster with up to four A100 GPUs.}
+            \resumeItem{Independent research project for CS 267: Applications of Parallel Computers, advised by Professors James Demmel and Hao Zhang.}
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+        {\textbf{CycleGAN-JAX} (\href{https://github.com/dlzou/cyclegan-jax}{\color{blue}GitHub})}{}
+          \resumeItemListStart
+            \resumeItem{Reimplemented the CycleGAN image generation architecture using the JAX framework.}
+            \resumeItem{Trained and evaluated image-to-image style transfer on several datasets such as horse2zebra; achieved outputs that are qualitatively on par with the reference implementation.}
+            \resumeItem{Independent final project for CS 182: Deep Learning.}
+          \resumeItemListEnd
+      
+      % \resumeProjectHeading
+      %   {\textbf{PintOS}}{}
+      %     \resumeItemListStart
+      %       \resumeItem{Completed in CS 162: Operation Systems and Systems Programming.}
+      %       \resumeItem{An instructional OS written in C and x86. Implemented basic user processes, user threads, concurrency primitives, and a concurrent filesystem with a buffer cache.}
+      %     \resumeItemListEnd
+      
+      % \resumeProjectHeading
+      %   {\textbf{NP-Hard Graph Problem Solver} $|$ \emph{\href{https://github.com/dlzou/cs170-project}{\color{blue}GitHub}}}{}
+      %     \resumeItemListStart
+      %       \resumeItem{Completed in CS 170: Efficient Algorithms and Intractable Problems.}
+      %       \resumeItem{An open-ended project to find optimal solutions for a set of inputs to a given NP-hard graph problem. Designed a greedy algorithm as a baseline and a simulated annealing algorithm to explore the space of potentially better solutions. Wrote scripts to to merge best solutions over multiple runs.}
+      %     \resumeItemListEnd
+      
+      % \resumeProjectHeading
+      % {\textbf{NumC: Toy Reimplementation of Core NumPy Functionality}}{}
+      %   \resumeItemListStart
+      %     \resumeItem{Implemented a lightweight numerical library for Python, with underlying data structures written in C for performance.}
+      %     \resumeItem{Supported efficient matrix slicing and common operations like add, abs, matmul, matpow. Optimized matmul with threading, loop tiling, and SIMD intrinsics. Optimized matpow with dynamic programming.}
+      %     \resumeItem{Final project in CS 61C: Great Ideas in Computer Architecture.}
+      %   \resumeItemListEnd
+      
+      % \resumeProjectHeading
+      %   {\textbf{Deep NLP Chatbot} $|$ \emph{\href{https://dlzou.github.io/2020/08/30/deep-nlp-chatbot-using-a-seq2seq-model/}{\color{blue}Blog}}}{}
+      %     \resumeItemListStart
+      %       \resumeItem{Self-studied RNNs and its variants, as well as the TensorFlow ML framework.}
+      %       \resumeItem{Implemented an attention-based seq2seq model that uses a beam search decoder for evaluation.}
+      %     \resumeItemListEnd
+      
+    \resumeSubHeadingListEnd
+
+
+
+%----------- VOLUNTEER EXPERIENCE -----------
+
+\section{Volunteer Experience}
   \vspace{3pt}
   \resumeSubHeadingListStart
     
     \resumeSubheading
       {Computer Science Undergraduate Association}{Berkeley, CA}
-      {VP of Technology \& Root Staff}{Sep 2020 -- Aug 2022}
+      {VP of Technology \& Root Staff}{Sep 2020 -- Dec 2022}
         \resumeItemListStart
             \resumeItem{Administered a GPU cluster, a web hosting server, and other free computing services used by 400+ members.}
             \resumeItem{Maintained a full stack web application written in Django.}
@@ -230,17 +305,17 @@
       {Junior Mentor}{Jan 2021 -- May 2021}
         \resumeItemListStart
             \resumeItem{Taught CS 61C: Great Ideas in Computer Architecture, which covers C, RISC-V assembly, CPU logic design, memory hierarchy, and parallel programming.}
-            \resumeItem{Mentored a group of student every week by giving short lectures and practice problem walk-throughs.}
+            \resumeItem{Mentored a group of students every week by giving short lectures and practice problem walk-throughs.}
         \resumeItemListEnd
     
-    \resumeSubheading
-      {FIRST Robotics Team 1477 (Texas Torque)}{The Woodlands, TX}
-      {Lead Programmer}{Jun 2018 -- May 2019}
-        \resumeItemListStart
-            \resumeItem{Recruited a team of 6 programmers and oversaw the development of the robot control system.}
-            \resumeItem{Designed new autonomous control framework that enables scheduling actions for multiple subsystems in parallel. Built a custom object tracking CV pipeline that runs on a coprocessor.}
-            \resumeItem{Reached the quarterfinal of the 2019 FRC World Championship as a team.}
-        \resumeItemListEnd
+    % \resumeSubheading
+    %   {FIRST Robotics Team 1477 (Texas Torque)}{The Woodlands, TX}
+    %   {Lead Programmer}{Jun 2018 -- May 2019}
+    %     \resumeItemListStart
+    %         \resumeItem{Recruited a team of 6 programmers and oversaw the development of the robot control system.}
+    %         \resumeItem{Designed new autonomous control framework that enables scheduling actions for multiple subsystems in parallel. Built a custom object tracking CV pipeline that runs on a coprocessor.}
+    %         \resumeItem{Reached the quarterfinal of the 2019 FRC World Championship as a team.}
+    %     \resumeItemListEnd
     
   \resumeSubHeadingListEnd
 
@@ -254,57 +329,18 @@
 
 
 
-%----------- PROJECTS -----------
-
-\section{Selected Projects}
-    \vspace{3pt}
-    \resumeSubHeadingListStart
-      
-      \resumeProjectHeading
-        {\textbf{PintOS}}{}
-          \resumeItemListStart
-            \resumeItem{An instructional OS written in C and x86. Completed in CS 162: Operation Systems and Systems Programming over the course of a semester.}
-            \resumeItem{Implemented basic user processes, kernel threads, concurrency primitives, and a concurrent filesystem with a buffer cache.}
-          \resumeItemListEnd
-      
-      \resumeProjectHeading
-        {\textbf{NP-Hard Graph Problem Solver} $|$ \emph{\href{https://github.com/dlzou/cs170-project}{\color{blue}GitHub}}}{}
-          \resumeItemListStart
-            \resumeItem{An open-ended project to find optimal solutions for a set of inputs to a given NP-hard graph problem. Completed in CS 170: Efficient Algorithms and Intractable Problems.}
-            \resumeItem{Designed a greedy algorithm as a baseline and a simulated annealing algorithm to explore the space of potentially better solutions. Wrote scripts to to merge best solutions over multiple runs.}
-          \resumeItemListEnd
-      
-      \resumeProjectHeading
-      {\textbf{NumC: Toy Reimplementation of Core NumPy Functionality}}{}
-        \resumeItemListStart
-          \resumeItem{Completed in CS 61C: Great Ideas in Computer Architecture.}
-          \resumeItem{Lightweight numerical library for Python, with underlying data structures written in C for performance.}
-          \resumeItem{Supported efficient matrix slicing and common operations like add, abs, matmul, matpow. Optimized matmul with threading, loop tiling, and SIMD intrinsics. Optimized matpow with dynamic programming.}
-        \resumeItemListEnd
-      
-      \resumeProjectHeading
-        {\textbf{Deep NLP Chatbot} $|$ \emph{\href{https://dlzou.github.io/2020/08/30/deep-nlp-chatbot-using-a-seq2seq-model/}{\color{blue}Blog}}}{}
-          \resumeItemListStart
-            \resumeItem{Self-studied RNNs and its variants, as well as the TensorFlow ML framework.}
-            \resumeItem{Implemented an attention-based seq2seq model that uses a beam search decoder for evaluation.}
-          \resumeItemListEnd
-      
-    \resumeSubHeadingListEnd
-
-
-
 %----------- AWARDS & ACHIEVEMENTS -----------
 
-\section{Awards}
-  \vspace{2pt}
-  \resumeSubHeadingListStart
-    \small{\item{
-        \textbf{National Merit Finalist (2019): }{selected among high school seniors scoring in the top 0.5\% of the PSAT.} \\ \vspace{3pt}
-    }}
-    \small{\item{
-        \textbf{National AP Scholar (2019): }{received the maximum score of 5 on fourteen Advanced Placement exams.} \\ \vspace{3pt}
-    }}
-  \resumeSubHeadingListEnd
+% \section{Awards}
+%   \vspace{2pt}
+%   \resumeSubHeadingListStart
+%     \small{\item{
+%         \textbf{National Merit Finalist (2019): }{selected among high school seniors scoring in the top 0.5\% of the PSAT.} \\ \vspace{3pt}
+%     }}
+%     \small{\item{
+%         \textbf{National AP Scholar (2019): }{received the maximum score of 5 on fourteen Advanced Placement exams.} \\ \vspace{3pt}
+%     }}
+%   \resumeSubHeadingListEnd
 
 
 
@@ -314,11 +350,11 @@
   \vspace{2pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{Programming: }{Python, C, Go, Java, OCaml, Lua, SQL, RISC-V, x86} \\ \vspace{3pt}
+        \textbf{Languages: }{Python, C/C++, CUDA, Go, Rust, Java, OCaml, Lua, SQL, RISC-V, x86} \\ \vspace{3pt}
         
-        \textbf{Libraries: }{SciPy, PyTorch, JAX, Ray, Spark, Django} \\ \vspace{3pt}
+        \textbf{Libraries: }{NumPy, PyTorch, JAX, Ray, Spark, ROS, MPI} \\ \vspace{3pt}
         
-        \textbf{Technologies: }{Linux, Git, Jira, Docker, AWS EC2} \\ \vspace{3pt}
+        \textbf{Technologies: }{Ubuntu Linux, Docker, Bazel, CMake, NVIDIA Nsight} \\ \vspace{3pt}
 
         \textbf{Other: }{native English and Mandarin Chinese, technical and blog writing}
     }}
